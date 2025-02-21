@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://uqal4lgypwti"]
+
+[ext_resource type="Script" path="res://script/enemy.gd" id="1_ie2hf"]
+[ext_resource type="Texture2D" uid="uid://3ruxfsvp87ub" path="res://assets/playerShip1_green.png" id="2_a8cfu"]
+[ext_resource type="PackedScene" uid="uid://bahdbsp1m605h" path="res://newScenes/killzone.tscn" id="3_3wo43"]
+
+[node name="enemy" type="Node2D"]
+script = ExtResource("1_ie2hf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = -1.5708
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_a8cfu")
+
+[node name="killzone" parent="." instance=ExtResource("3_3wo43")]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="killzone"]
+position = Vector2(-31, -29)
+rotation = -1.5708
+polygon = PackedVector2Array(-33, 11.9999, -25, 11.9999, -23, 25, -11, 32, -5, 33, -5.4, 44.8, -23.4, 47.8, -34.4, 47.8, -51.4, 44.8, -53, 33, -47, 32, -35, 26)
+
+[node name="RayCastR" type="RayCast2D" parent="."]
+position = Vector2(0, 1)
+rotation = -1.5708
+target_position = Vector2(0.999999, 19)
+
+[node name="RayCastL" type="RayCast2D" parent="."]
+position = Vector2(0, 1)
+rotation = -1.5708
+target_position = Vector2(1.00007, -19)
