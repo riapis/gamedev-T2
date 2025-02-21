@@ -1,3 +1,7 @@
+### Fari Hafizh R - 2206083691
+
+### Level baru: newScenes/new_level.tscn
+
 # Latihan: Playtest
 
 1. Apa saja pesan log yang dicetak pada panel Output?

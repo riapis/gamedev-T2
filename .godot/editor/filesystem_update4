@@ -6,3 +6,11 @@ res://newScenes/new_level.tscn
 res://newScenes/player.tscn
 res://newScenes/enemy.tscn
 res://newScenes/killzone.tscn
+res://script/enemy2.gd
+res://script/enemy3.gd
+res://script/enemy.gd
+res://script/finish.gd
+res://script/killzone.gd
+res://scenes/ObjectiveArea.gd
+res://scenes/PlatformBlue.gd
+res://script/player.gd
